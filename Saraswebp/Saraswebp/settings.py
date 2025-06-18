@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Saraswebp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'Home' / 'templates'],
+        'DIRS': [BASE_DIR / 'Home' / 'templates'/'HomeTemp'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
