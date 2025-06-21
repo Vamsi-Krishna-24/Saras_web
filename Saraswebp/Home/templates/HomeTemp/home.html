@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en" class="bg-white text-gray-900">
@@ -16,9 +17,9 @@
       <span class="text-xl font-bold">SAR<span class="text-blue-500">AS</span></span>
     </div>
     <nav class="hidden md:flex space-x-6 text-sm text-gray-600">
-      <a href="/features/">Features</a>
-      <a href="/#testmonials/">Testimonials</a>
-      <a href="#">Pricing</a>
+      <a href="#features">Features</a>
+      <a href="#testmonials">testmonials</a>
+      <a href="#Pricing">Pricing</a>
     </nav>
     <div class="flex items-center space-x-4">
       <a href="/login/" class="text-sm text-gray-700">Log in</a>
@@ -128,7 +129,7 @@
   </section>
 
 <!-- Testimonials Section -->
-<section id="testimonials" class="bg-gray-50 py-24 px-4">
+<section id="testmonials" class="bg-gray-50 py-24 px-4">
     <div class="max-w-7xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">Loved by businesses worldwide.</h2>
       <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
@@ -210,3 +211,92 @@
       </div>
     </div>
   </section>
+
+  <!-- Pricing Section -->
+<section id="Pricing" class="bg-gray-900 text-white py-24">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4">Simple pricing, for everyone.</h2>
+    <p class="text-gray-400 max-w-xl mx-auto mb-16">
+      It doesn’t matter what size your business is, our software won’t work well for you.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8 justify-center">
+      <!-- Starter Plan -->
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+        <h3 class="text-4xl font-bold mb-2">$9</h3>
+        <p class="text-sm text-gray-400 mb-6">Starter<br>Good for anyone who is just looking for just meanings</p>
+        <a href="#" class="block border border-white text-white py-2 rounded-full hover:bg-white hover:text-gray-900 transition">Get started</a>
+        <ul class="text-left mt-6 space-y-2 text-sm text-gray-300">
+          <li>✓ </li>
+          <li>✓ Get Synonms/ Related words</li>
+          <li>✓ Explanation with examples</li>
+          <li>✓ 24*7 support</li>
+        </ul>
+      </div>
+
+      <!-- Small Business Plan -->
+      <div class="bg-blue-600 p-8 rounded-2xl shadow-2xl scale-105">
+        <h3 class="text-4xl font-bold mb-2">$15</h3>
+        <p class="text-sm text-blue-100 mb-6">Small business<br>Perfect for small / medium sized businesses.</p>
+        <a href="#" class="block bg-white text-blue-600 font-semibold py-2 rounded-full hover:bg-blue-100 transition">Get started</a>
+        <ul class="text-left mt-6 space-y-2 text-sm text-white">
+          <li>✓ Get Pictures</li>
+          <li>✓ Wikipedia Results</li>
+          <li>✓ Latest Meanings</li>
+          <li>✓ 24*7 support</li>
+          <li> ✓ Online Dictionary </li>
+  
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-gray-900">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About SARAS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- About -->
+  <section class="text-center py-24 px-4 bg-gray-50">
+    <p class="text-sm text-blue-600 font-medium uppercase">About Us</p>
+    <h1 class="mt-2 text-4xl md:text-5xl font-bold tracking-tight">Boost your productivity.<br> Start using our app today.</h1>
+    <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">SARAS empowers users to instantly access word meanings, synonyms, and contextual usage across platforms — without disrupting your flow.</p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-gray-600">
+      <div>
+        <div class="text-xl font-bold text-gray-800 mb-4">SARAS</div>
+        <p>© 2024 SARAS, Inc. All rights reserved.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-900 mb-2">Solutions</h4>
+        <ul><li>Meaning Engine</li><li>AI Synonyms</li><li>Examples</li><li>Contextual UI</li></ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-900 mb-2">Support</h4>
+        <ul><li>Submit ticket</li><li>Guides</li><li>Documentation</li></ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-900 mb-2">Company</h4>
+        <ul><li>About</li><li>Blog</li><li>Careers</li></ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-900 mb-2">Legal</h4>
+        <ul><li>Privacy policy</li><li>Terms of service</li></ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
