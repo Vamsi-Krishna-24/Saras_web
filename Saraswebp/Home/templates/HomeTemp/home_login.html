@@ -13,26 +13,47 @@
       }
     </script>
 </head>
+
 <body class="bg-white text-gray-900 font-sans">
 
-  <!-- Header -->
-  <header class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+  <!-- 🔹 Top Header -->
+  <header class="w-full px-6 py-4 flex justify-between items-center bg-white shadow-md">
+
+    <!-- 🔸 Logo -->
     <div class="flex items-center space-x-2">
       <div class="w-6 h-6 bg-blue-500 rounded-full"></div>
       <span class="text-xl font-bold">SAR<span class="text-blue-500">AS</span></span>
     </div>
+
+    <!-- 🔸 Nav Links (center-aligned on medium screens and up) -->
     <nav class="hidden md:flex space-x-6 text-sm text-gray-600">
-      <a href="#features">Features</a>
-      <a href="#testmonials">testmonials</a>
-      <a href="#Pricing">Pricing</a>
+      <a href="#features" class="hover:text-blue-500 transition">Features</a>
+      <a href="#testimonials" class="hover:text-blue-500 transition">Testimonials</a>
+      <a href="#pricing" class="hover:text-blue-500 transition">Pricing</a>
     </nav>
-    <div class="flex items-center space-x-4">
-      <a href="/login/" class="text-sm text-gray-700">Log in</a>
-      <a href="#" class="bg-blue-600 text-white text-sm px-4 py-2 rounded-full hover:bg-blue-700">Get started today</a>
+
+    <!-- 🔸 Profile + Logout -->
+    <div class="flex items-center space-x-6">
+      <!-- Profile -->
+      <a href="#" class="flex items-center space-x-1 hover:text-blue-600 transition">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v1.2h19.2v-1.2c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+      </a>
+
+      <!-- Logout -->
+      <a href="{% url 'login' %}" class="flex items-center space-x-1 hover:text-red-500 transition">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M16 13v-2H7V8l-5 4 5 4v-3h9zm3-10H5c-1.1 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+        </svg>
+      </a>
     </div>
+
   </header>
 
-  <!-- Hero Section -->
+
+
+  <!-- Hero Section --><!---------------------------------------------------------------------->
   <main class="text-center mt-24 px-4">
     <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
       Understanding <span class="text-blue-600 underline underline-offset-4">words made Instant</span>
@@ -55,8 +76,9 @@
 </html>
 
 
- <!-- Features Section -->
- <section id="features" class="mt-40 bg-gradient-to-b from-blue-600 to-purple-600 text-white py-20">
+ <!-- Features Section --><!---------------------------------------------------------------------->
+ <body class="relative min-h-screen text-white overflow-hidden">
+ <section id="features" class="mt-40 bg-gradient-to-b bg-gradient-to-br from-blue-700 via-purple-700 to-indigo-900 text-white py-20">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-3xl md:text-4xl font-semibold text-center">Everything you need to understand, any word. Instantly.</h2>
       <p class="mt-4 text-center text-blue-100 max-w-2xl mx-auto">
@@ -69,23 +91,23 @@
     <div class="flex flex-col gap-10 ">
 
       
-        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/3.jpg?raw=true')" class=" max-w-md space-y-6 bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-lg space-y-6 hover:shadow-xl transition duration-300">
+        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/3.jpg?raw=true')" class=" max-w-md space-y-6 bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-md space-y-6 hover:shadow-xl hover:scale-105 hover:-translate-y-3 cursor-pointer transition duration-300">
             <h3 class="text-lg font-semibold"> Meaning on the spot</h3>
             <p class="text-blue-100 text-sm">No browser tabs. No typing. Just double-click any word, 
               and SARAS brings you its meaning then and there — no interruption to your flow.</p>
         </div>
         
-        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/2.jpg?raw=true')" class = "max-w-md bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-lg space-y-6 hover:shadow-xl transition duration-300">
+        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/2.jpg?raw=true')" class = "max-w-md bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-lg space-y-6 hover:shadow-xl hover:scale-105 hover:-translate-y-3 cursor-pointer transition duration-300">
             <h3 class="text-lg font-semibold"> Examples + Synonyms = Clarity.</h3>
             <p class="text-blue-100 text-sm">SARAS doesn’t just show definitions — it teaches you the word with real-life usage examples and similar terms. It’s like having a vocabulary mentor on your screen.</p>
         </div>
         
-        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/4.jpg?raw=true')" class = "max-w-md bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-lg space-y-6 hover:shadow-xl transition duration-300">
+        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/4.jpg?raw=true')" class = "max-w-md bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-lg space-y-6 hover:shadow-xl hover:scale-105 hover:-translate-y-3 cursor-pointer transition duration-300">
           <h3 class="text-lg font-semibold"> Lightweight & powerful</h3>
           <p class="text-blue-100 text-sm">SARAS doesn’t just show definitions — it teaches you the word with real-life usage examples and similar terms. It’s like having a vocabulary mentor on your screen.</p>
         </div>
         
-        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/1.jpg?raw=true')" class="max-w-md bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-lg space-y-6 hover:shadow-xl transition duration-300">
+        <div onclick="changeImage('https://github.com/Vamsi-Krishna-24/Saras-Interface-Design/blob/8bb4ad2dde5573e46ce57505e69d7f93d4e116c0/1.jpg?raw=true')" class="max-w-md bg-white bg-opacity-10 p-6 rounded-xl border border-white border-opacity-20 shadow-lg backdrop-blur-lg space-y-6 hover:shadow-xl hover:scale-105 hover:-translate-y-3 cursor-pointer transition duration-300">
             <h3 class="text-lg font-semibold">One tool. All apps.</h3>
             <p class="text-blue-100 text-sm">Under 2 GB. Full dictionary built in.SARAS runs smooth on every system.Just efficient design to keep it fast, light, and accessible.</p>
         </div>
@@ -108,18 +130,30 @@
 
 <!--End of features section -->
 
-<!-- CTA Section -->
-<section id="cta" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-24">
-    <div class="max-w-3xl mx-auto text-center px-4">
-      <h2 class="text-3xl md:text-4xl font-semibold">Get started today</h2>
-      <p class="mt-4 text-blue-100 text-base">
-        It’s time to take control of your learning. Use SARAS to instantly unlock word power, right where you are.
-      </p>
-      <a href="#" class="mt-8 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full text-sm hover:bg-blue-50 transition">
-        Get 1 week free
-      </a>
-    </div>
-  </section>
+<!-- CTA Section --><!------------------------------------------------------------------------------------------------------------------------------------->
+<!-- 🔒 Fixed Left CTA Panel -->
+<!-- 📌 Fixed Left Rectangular CTA -->
+<!-- 📌 True Vertical Rectangle CTA -->
+<!-- 🚀 Fixed Vertical CTA Banner (left side) -->
+
+
+<!-- 🌟 Vertical CTA Strip (Pinned Left) -->
+
+<!-- 🌟 Vertical CTA Strip (Pinned Left & Rotated) -->
+<div class="fixed top-1/2 left-0 z-50 transform -translate-y-1/2">
+  <a href="#"
+     class="bg-indigo-600 text-white font-semibold text-sm tracking-wide px-4 py-2 rounded-t-md shadow-lg
+            transform -rotate-90 origin-top-left hover:bg-indigo-700 transition duration-300">
+    Get Free Trial for 5 Days
+  </a>
+</div>
+
+
+
+
+
+
+
 
 <!-- Testimonials Section -->
 <section id="testmonials" class="bg-gray-50 py-24 px-4">
@@ -204,7 +238,6 @@
       </div>
     </div>
   </section>
-
   <!-- Pricing Section -->
 <section id="Pricing" class="bg-gray-900 text-white py-24">
   <div class="max-w-7xl mx-auto px-6 text-center">
@@ -263,9 +296,10 @@
 
   </section>
 
- <!-- Footer --><!-------------------------------------------------------------------------------->
- <footer class="bg-gradient-to-br from-blue-800 via-purple-500 to-cyan-900 text-white py-12 mt-12">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-sm">
+  <!-- Footer --><!-------------------------------------------------------------------------------->
+ <footer class="bg-gradient-to-br from-[#2563eb] via-[#6366f1] to-[#a855f7]
+ text-white py-12 mt-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-sm ">
     
     <!-- Brand Info -->
     <div>
@@ -315,6 +349,7 @@
     
   </div>
 </footer>
+
 
 </body>
 </html>
